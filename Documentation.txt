@@ -1,0 +1,53 @@
+Highlighted Features
+- Unlimited Service categories with Unlimited service.
+- Fully Admin Based System, Admin Will earn from All Plugin API's 
+- Support all types of recharge, utility, Bills & Money transfer System.
+- Support modern browser and cross-browser compatibility.
+- Some Automatic Payment Gateway.
+- Easy Documentation for Basic Knowledge.
+- Clean and modern user interface, 
+
+
+User Dashboard Features
+- Selectable Service for recharge & Bill.
+- Secure Registration & referal selection.
+- 20+ Automated payment gateway.
+- Unlimited manual Payment gateway.
+- Service Dashboard.
+- 2-step recharge system.
+- Referal facility, Downline Page.
+- Service Recharge History.
+- Transaction history.
+- Profile Management.
+- 2FA Security.
+- Support ticket system.
+- Livechat, Security Captcha Included.
+- Comes with Multi language features.
+- Email Notification & Verification.
+- SMS Notification & Verification.
+
+
+Admin Features
+- Manage Service Category.
+- Manage Service.
+- Manage Applied Services.
+- Manage Users.
+- Manage Payment Gateways.
+- Manage Deposits.
+- Manage Support Ticket.
+- Manage Report.
+- General Setting.
+- Manage Extensions.
+- Manage Language.
+- SEO Manager.
+- Email Manager.
+- SMS Manager.
+- Frontend Manager.
+- Manage Templates.
+- Manage Pages.
+- Manage Section.
+- Manage Contact Us.
+- Manage Feature Section.
+- Manage Footer Section.
+- Manage Partner Section.
+- Manage Social Icons.

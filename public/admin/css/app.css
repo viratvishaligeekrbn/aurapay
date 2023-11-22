@@ -1,0 +1,11 @@
+.icon-right {
+    padding-right: 25px;
+    background: url("../img/right.png") no-repeat right;
+    background-size: 20px;
+}
+
+.icon-wrong {
+    padding-right: 25px;
+    background: url("../img/wrong.png") no-repeat right;
+    background-size: 20px;
+}
