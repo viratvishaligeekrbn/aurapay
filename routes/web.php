@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginRegisterController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\UsersController;
 
 Route::controller(LoginRegisterController::class)->group(function () {
     Route::get('register', 'register')->name('register');
@@ -15,6 +16,10 @@ Route::controller(LoginRegisterController::class)->group(function () {
 Route::group(['middleware' => ['auth:users'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::controller(DashboardController::class)->group(function () {
         Route::get('dashboard', 'dashboard')->name('dashboard');
+    });
+    Route::controller(UsersController::class)->group(function () {
+        Route::get('add_user', 'create')->name('add_user');
         Route::get('admin', 'admin')->name('admin');
+        Route::post('store', 'store')->name('store');
     });
 });

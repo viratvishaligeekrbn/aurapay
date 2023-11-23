@@ -35,7 +35,7 @@ class LoginRegisterController extends Controller
         $validator = Validator($request->all(), [
             'first_name' => 'required',
             'last_name' => 'required',
-            'email' => 'required|email',
+            'email' => 'required|unique:users,email',
             'phone' => 'required|numeric',
             'username' => 'required|unique:users,username',
             'role' => 'required',

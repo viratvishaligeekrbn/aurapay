@@ -17,6 +17,7 @@
     <!-- Custom styles for this template-->
     <link href="{{ URL::asset('admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('admin/css/app.css') }}" rel="stylesheet">
+    @yield('push_css')
 </head>
 
 <body class="bg-gradient-primary">
@@ -80,47 +81,8 @@
             hideMethod: "fadeOut",
         };
         // ------------toastr End here------------
-        $('#findusername').keyup(function() {
-            if (this.value.length > 2) {
-                var typ_name = $(this).val();
-                $.ajax({
-                    url: "{{ route('check_username') }}",
-                    method: "POST",
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        "username": typ_name
-                    },
-                    success: function(data) {
-                        if (data.status == 1) {
-                            $('#findusername').removeClass('icon-wrong')
-                            $('#findusername').addClass('icon-right')
-                        } else if (data.status == 0) {
-                            $('#findusername').removeClass('icon-right')
-                            $('#findusername').addClass('icon-wrong')
-                        }
-                    }
-                })
-            }
-        });
-        // ------------------------jquery end here------------------------
-        $('#register_btn').click(function() {
-            var formdata = $('#register_form').serializeArray();
-            $.ajax({
-                url: "{{ route('register_me') }}",
-                method: "POST",
-                data: formdata,
-                success: function(data) {
-                    if (data.status == 0) {
-                        toastr["error"](data.message);
-                    } else {
-                        toastr["success"](data.message);
-
-                    }
-                }
-            })
-
-        });
     </script>
+    @yield('push_script')
 </body>
 
 </html>
